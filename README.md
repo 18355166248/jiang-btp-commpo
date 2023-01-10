@@ -3,7 +3,9 @@
 [![NPM version](https://img.shields.io/npm/v/jiang-btp-compo.svg?style=flat)](https://npmjs.org/package/jiang-btp-compo)
 [![NPM downloads](http://img.shields.io/npm/dm/jiang-btp-compo.svg?style=flat)](https://npmjs.org/package/jiang-btp-compo)
 
-jiang业务组件库
+jiang 业务组件库
+
+测试
 
 ## Usage
 
