@@ -1,8 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@babel/runtime': ^7.20.7
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
+  '@types/lodash-es': ^4.17.6
   '@umijs/lint': ^4.0.0
   dumi: ^2.0.2
   eslint: ^8.23.0
@@ -10,16 +12,22 @@ specifiers:
   gh-pages: ^4.0.0
   husky: ^8.0.3
   lint-staged: ^13.1.0
+  lodash-es: ^4.17.21
   prettier: ^2.7.1
   prettier-plugin-organize-imports: ^3.0.0
   prettier-plugin-packagejson: ^2.2.18
-  react: ^18.0.0
-  react-dom: ^18.0.0
+  react: ^18.2.0
+  react-dom: ^18.2.0
   stylelint: ^14.9.1
+
+dependencies:
+  '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.7
+  lodash-es: registry.npmmirror.com/lodash-es/4.17.21
 
 devDependencies:
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/17.4.1
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/17.4.0
+  '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
   '@umijs/lint': registry.npmmirror.com/@umijs/lint/4.0.42_eslint@8.31.0+stylelint@14.16.1
   dumi: registry.npmmirror.com/dumi/2.1.2_10b0a404e6a10a41975866c15fa50518
   eslint: registry.npmmirror.com/eslint/8.31.0
@@ -557,7 +565,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.11
-    dev: true
 
   registry.npmmirror.com/@babel/template/7.20.7:
     resolution: {integrity: sha512-8SegXApWe6VoNw0r9JHpSteLKTpTiLZ4rMlGIm9JQ18KiCtyQiAMEazujAHrUS5flrcqYZa75ukev3P6QmUwUw==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/@babel/template/-/template-7.20.7.tgz}
@@ -2283,6 +2290,20 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz}
     name: '@types/json-schema'
     version: 7.0.11
+    dev: true
+
+  registry.npmmirror.com/@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.6.tgz}
+    name: '@types/lodash-es'
+    version: 4.17.6
+    dependencies:
+      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
+    dev: true
+
+  registry.npmmirror.com/@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.191.tgz}
+    name: '@types/lodash'
+    version: 4.14.191
     dev: true
 
   registry.npmmirror.com/@types/mdast/3.0.10:
@@ -8579,6 +8600,12 @@ packages:
       p-locate: registry.npmmirror.com/p-locate/5.0.0
     dev: true
 
+  registry.npmmirror.com/lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
+    dev: false
+
   registry.npmmirror.com/lodash.camelcase/4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz}
     name: lodash.camelcase
@@ -12275,7 +12302,6 @@ packages:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz}
     name: regenerator-runtime
     version: 0.13.11
-    dev: true
 
   registry.npmmirror.com/regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==, registry: http://xnpm.ximalaya.com/, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz}

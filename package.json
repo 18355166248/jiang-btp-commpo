@@ -34,9 +34,14 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "@babel/runtime": "^7.20.7",
+    "lodash-es": "^4.17.21"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/lodash-es": "^4.17.6",
     "@umijs/lint": "^4.0.0",
     "dumi": "^2.0.2",
     "eslint": "^8.23.0",
@@ -47,11 +52,12 @@
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
+    "lodash-es": ">=4.17.0",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
