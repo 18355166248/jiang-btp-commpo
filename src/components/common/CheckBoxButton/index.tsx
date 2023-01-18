@@ -1,6 +1,6 @@
 import { isFunction } from 'lodash-es';
 import React, { FC, useEffect, useState } from 'react';
-import './index.scoped.less';
+import './style/index.less';
 
 interface itemProps {
   label: string;

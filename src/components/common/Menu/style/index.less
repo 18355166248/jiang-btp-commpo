@@ -1,0 +1,85 @@
+@import '../../../style/common.less';
+
+@menu-prefix-cls: ~'@{prefixCls}-menu';
+
+@font-color: #333;
+@active-color: #1890ff;
+
+.@{menu-prefix-cls} {
+  width: 64px;
+  background-color: #fff;
+  &-popover {
+    .ant-popover-arrow {
+      display: none;
+    }
+    .ant-popover-inner-content {
+      padding: 0;
+    }
+  }
+  &-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-bottom: 4px;
+    color: @font-color;
+    cursor: pointer;
+    &:hover {
+      color: @active-color;
+    }
+    &.active {
+      color: @active-color;
+    }
+    &-icon {
+      font-size: 20px;
+      margin-bottom: 4px;
+      color: @active-color;
+    }
+    &-label {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  &-content {
+    padding: 4px;
+    max-height: 412px;
+    writing-mode: vertical-lr;
+    &-second {
+      writing-mode: horizontal-tb;
+      float: left;
+      margin-right: 4px;
+    }
+    &-box {
+      writing-mode: horizontal-tb;
+      color: @font-color;
+      width: 159px;
+      height: 36px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      padding-left: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &.active {
+        // color: @active-color;
+      }
+      &-icon {
+        margin-right: 8px;
+      }
+      &-three {
+        padding-left: 34px;
+        cursor: pointer;
+        &.active {
+          background-color: #e6f7ff;
+          color: @active-color;
+        }
+        &:hover {
+          color: @active-color;
+        }
+      }
+    }
+  }
+}
