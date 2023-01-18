@@ -35,8 +35,7 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "^7.20.7",
-    "lodash-es": "^4.17.21"
+    "@babel/runtime": "^7.20.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -53,6 +52,7 @@
     "gh-pages": "^4.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
+    "lodash-es": "^4.17.21",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
@@ -61,6 +61,7 @@
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
+    "antd": ">=4.24.7",
     "classnames": ">=2.3.2",
     "lodash-es": ">=4.17.0",
     "react": ">=16.9.0",
