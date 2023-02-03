@@ -1,6 +1,6 @@
 {
   "name": "jiang-btp-compo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "jiang业务组件库",
   "license": "MIT",
   "module": "dist/index.js",
