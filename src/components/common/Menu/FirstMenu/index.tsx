@@ -52,7 +52,7 @@ const FirstMenu: FC<FirstMenuProps> = ({ item }) => {
         })}
       >
         {CurrentIcon && (
-          <div className={`${FirstMenuCls}-box-icon`}>
+          <div className={`${FirstMenuCls}-one-icon`}>
             <CurrentIcon
               size="20"
               fill={active || isHover ? activeColor : baseColor}
@@ -60,7 +60,7 @@ const FirstMenu: FC<FirstMenuProps> = ({ item }) => {
           </div>
         )}
 
-        <div className={`${FirstMenuCls}-box-label`}>{item.label}</div>
+        <div className={`${FirstMenuCls}-one-label`}>{item.label}</div>
       </div>
     </Popover>
   );
