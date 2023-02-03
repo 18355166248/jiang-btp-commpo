@@ -24,7 +24,9 @@ const SecondMenu: FC<SecondMenuProps> = ({ item }) => {
 
         return (
           <div key={key} className={`${contentCls}-second`}>
-            <div className={classNames(`${contentCls}-box`, { active })}>
+            <div
+              className={classNames(`${contentCls}-box fw-bold`, { active })}
+            >
               {Icon && (
                 <span className={`${contentCls}-box-icon`}>
                   <Icon size={14} />
